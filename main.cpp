@@ -1,4 +1,4 @@
-﻿/*Copyright (c) 2018, Ivan Kmeťo
+/*Copyright (c) 2018, Ivan Kmeťo
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -72,17 +72,15 @@ int main()
 
 	cout << endl;
 
-	std::cout << "Converted values RGBA -> Float:" << endl;
-	std::cout << std::fixed;
-	std::cout << std::setprecision(dec);
-	std::cout << "[R]Red: " << fr << "f" << endl;
-	std::cout << "[G]Green: " << fg << "f" << endl;
-	std::cout << "[B]Blue: " << fb << "f" << endl;
-	std::cout << "[A]Alpha: " << fa << "f" << endl;
+	cout << "Converted values RGBA -> Float:" << endl;
+	cout << fixed;
+	cout << setprecision(dec);
+	cout << "[R]Red: " << fr << "f" << endl;
+	cout << "[G]Green: " << fg << "f" << endl;
+	cout << "[B]Blue: " << fb << "f" << endl;
+	cout << "[A]Alpha: " << fa << "f" << endl << endl;
 
-	cout << endl;
-
-	std::cout << "[RGBA]: " << fr << "f, " << fg << "f, " << fb << "f, " << fa << "f" << endl;
+	cout << "[RGBA]: " << fr << "f, " << fg << "f, " << fb << "f, " << fa << "f" << endl;
 
 	return 0;
 }
