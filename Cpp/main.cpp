@@ -36,28 +36,28 @@ int main()
 	std::cout << "[R]Red: ";
 	std::cin >> r;
 	while (r > 255 || r < 0) { 
-		std::cout << "(!) Please enter valid number in range [0-255]" << std::endl << "[R]Red:";
+		std::cout << "(!) Please enter valid number in range [0-255]" << std::endl << "[R]Red: ";
 		std::cin >> r;
 	}
 
 	std::cout << "[G]Green: ";
 	std::cin >> g;
 	while (g > 255 || g < 0) {
-		std::cout << "(!) Please enter valid number in range [0-255]" << std::endl << "[G] Green:";
+		std::cout << "(!) Please enter valid number in range [0-255]" << std::endl << "[G]Green: ";
 		std::cin >> g;
 	}
 
 	std::cout << "[B]Blue: ";
 	std::cin >> b;
 	while (b > 255 || b < 0) {
-		std::cout << "(!) Please enter valid number in range [0-255]" << std::endl << "[B] Blue:";
+		std::cout << "(!) Please enter valid number in range [0-255]" << std::endl << "[B]Blue: ";
 		std::cin >> b;
 	}
 
 	std::cout << "[A]Alpha: ";
 	std::cin >> a;
 	while (a > 255 || a < 0) {
-		std::cout << "(!) Please enter valid number in range [0-255]" << std::endl << "[A] Alpha:";
+		std::cout << "(!) Please enter valid number in range [0-255]" << std::endl << "[A]Alpha: ";
 		std::cin >> a;
 	}
 
