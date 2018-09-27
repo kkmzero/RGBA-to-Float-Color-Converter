@@ -1,5 +1,13 @@
+#Linux
 #sudo apt-get install fpc
-#sudo apt-get install lua5.2
+#sudo apt-get install lua5.3
+
+#*BSD [! gmake is prefered]
+#pkg_add fpc
+#pkg_add lua
+#[! if needed:]
+#ln -s /usr/local/bin/lua53 /usr/local/bin/lua
+#ln -s /usr/local/bin/luac53 /usr/local/bin/luac
 
 objectsLua = rgba2float \
 	     rgba2float.luac \
