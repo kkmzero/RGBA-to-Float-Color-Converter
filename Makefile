@@ -2,7 +2,7 @@
 #sudo apt-get install fpc
 #sudo apt-get install lua5.3
 
-#*BSD [! gmake is prefered]
+#*BSD [! gmake is preferred]
 #pkg_add fpc
 #pkg_add lua
 #[! if needed:]
