@@ -1,38 +1,33 @@
-#Linux
-#sudo apt-get install fpc
-#sudo apt-get install lua5.3
+# Demo code for converting RGBA to Float color values.
+#
+# CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+# https://creativecommons.org/publicdomain/zero/1.0/
 
-#*BSD [! gmake is preferred]
-#pkg_add fpc
-#pkg_add lua
-#[! if needed:]
-#ln -s /usr/local/bin/lua53 /usr/local/bin/lua
-#ln -s /usr/local/bin/luac53 /usr/local/bin/luac
 
 objectsLua = rgba2float \
 	     rgba2float.luac \
 
-c: C/main.c
+c: c/main.c
 	gcc -o rgba2float $<
 
-cpp: Cpp/main.cpp
+cpp: cpp/main.cpp
 	g++ -o rgba2float $<
 
-pascal: Pascal/main.pas
+pascal: pascal/main.pas
 	fpc -o"./rgba2float" $<
 	rm main.o
 
-lua: Lua/main.lua
+lua: lua/main.lua
 	echo '#!/usr/bin/env lua' >> rgba2float
 	echo 'dofile("rgba2float.luac")' >> rgba2float
 	luac -o rgba2float.luac $<
 	chmod +x rgba2float
 
 install: rgba2float
-	sudo cp $< /usr/local/bin
+	cp $< /usr/local/bin
 
 installLua:
-	sudo cp $(objectsLua) /usr/local/bin
+	cp $(objectsLua) /usr/local/bin
 
 .PHONY: clean
 clean:
